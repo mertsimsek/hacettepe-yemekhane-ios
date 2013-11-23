@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A66F3B9618415BDA00092A0F /* _PPSGununYemegiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A66F3B9518415BDA00092A0F /* _PPSGununYemegiViewController.m */; };
 		A6E0C72C18356A45007C1818 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E0C72B18356A45007C1818 /* UIKit.framework */; };
 		A6E0C72E18356A45007C1818 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E0C72D18356A45007C1818 /* Foundation.framework */; };
 		A6E0C73018356A45007C1818 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E0C72F18356A45007C1818 /* CoreGraphics.framework */; };
@@ -31,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A66F3B9418415BDA00092A0F /* _PPSGununYemegiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _PPSGununYemegiViewController.h; sourceTree = "<group>"; };
+		A66F3B9518415BDA00092A0F /* _PPSGununYemegiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _PPSGununYemegiViewController.m; sourceTree = "<group>"; };
 		A6E0C72818356A45007C1818 /* Hacettepe Yemekhane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hacettepe Yemekhane.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E0C72B18356A45007C1818 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A6E0C72D18356A45007C1818 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -129,6 +132,8 @@
 				A6E0C74618356A45007C1818 /* _PPSViewController.h */,
 				A6E0C74718356A46007C1818 /* _PPSViewController.m */,
 				A6E0C73218356A45007C1818 /* Supporting Files */,
+				A66F3B9418415BDA00092A0F /* _PPSGununYemegiViewController.h */,
+				A66F3B9518415BDA00092A0F /* _PPSGununYemegiViewController.m */,
 			);
 			path = "Hacettepe Yemekhane";
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 				A6E0C73818356A45007C1818 /* main.m in Sources */,
 				A6E0C73C18356A45007C1818 /* _PPSAppDelegate.m in Sources */,
 				A6E0C74818356A46007C1818 /* _PPSViewController.m in Sources */,
+				A66F3B9618415BDA00092A0F /* _PPSGununYemegiViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

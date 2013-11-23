@@ -7,12 +7,14 @@
 //
 
 #import "_PPSAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation _PPSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [Parse setApplicationId:@"rHTwS3x2tDyHFMuGmi2JxzHd2bXCxzPEMnmo4024"
+                  clientKey:@"88SWAPQddxYVvLpxwANbGPRMpiy31uJnA7brW8ow"];
     return YES;
 }
 							

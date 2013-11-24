@@ -11,6 +11,8 @@
 
 @interface _PPSGununYemegiViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextView *gununYemegi;
+@property (weak, nonatomic) IBOutlet UILabel *date;
+@property (weak, nonatomic) IBOutlet UILabel *kalori;
 
 - (NSString*) parseYemekString: (NSString*) unParsedString;
 

@@ -13,7 +13,7 @@
 @end
 
 @implementation _PPSGununYemegiViewController
-@synthesize gununYemegi;
+@synthesize gununYemegi,kalori,date;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,17 +27,26 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	NSDate *date = [NSDate date];
+	NSDate *dateOfDay = [NSDate date];
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc]init];
     [dateFormat setDateFormat:@"dd/MM/yyyy"];
-    NSString *dateString = [dateFormat stringFromDate:date];
+    NSString *dateString = [dateFormat stringFromDate:dateOfDay];
     
     PFQuery *query = [PFQuery queryWithClassName:@"Yemekhane"];
     [query whereKey:@"date" equalTo:dateString];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             for (PFObject *object in objects) {
+                NSString *gun = object[@"gun"];
+                NSString *kaloriText = object[@"kalori"];
+                
+                NSString *gunTamHali = [NSString stringWithFormat:@"%@  %@",gun,dateString];
+                NSString *kaloriTamHali = [NSString stringWithFormat:@"%@  %@",kaloriText,@"Afiyet olsun! :)"];
+                
+                
                 [gununYemegi setText:[self parseYemekString: object[@"yemek"]]];
+                [date setText:gunTamHali];
+                [kalori setText:kaloriTamHali];
             }
         } else {
             // Log details of the failure

@@ -147,22 +147,48 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZY9-JT-EVD">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="207" id="W2O-4Y-s3e"/>
+                                </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReX-Pc-Irm">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="GjM-mn-ENl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WV4-QO-Ll4">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="bem-9c-X8n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ZY9-JT-EVD" firstAttribute="bottom" secondItem="Xqv-jQ-hMW" secondAttribute="bottom" type="default" id="6My-22-7cl"/>
+                            <constraint firstAttribute="bottom" secondItem="WV4-QO-Ll4" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Eyr-pO-Xs2"/>
                             <constraint firstItem="ZY9-JT-EVD" firstAttribute="trailing" secondItem="Xqv-jQ-hMW" secondAttribute="trailing" type="default" id="GcC-zl-a3e"/>
-                            <constraint firstItem="ZY9-JT-EVD" firstAttribute="top" secondItem="Xqv-jQ-hMW" secondAttribute="top" type="default" id="mHk-1s-8HV"/>
+                            <constraint firstAttribute="trailing" secondItem="ReX-Pc-Irm" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Kif-LG-3ED"/>
+                            <constraint firstItem="WV4-QO-Ll4" firstAttribute="leading" secondItem="Xqv-jQ-hMW" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="PlQ-8v-Dj7"/>
+                            <constraint firstAttribute="trailing" secondItem="WV4-QO-Ll4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Zqs-Q2-Zp1"/>
+                            <constraint firstItem="ReX-Pc-Irm" firstAttribute="leading" secondItem="Xqv-jQ-hMW" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="pub-ak-1eh"/>
+                            <constraint firstItem="ZY9-JT-EVD" firstAttribute="top" secondItem="ReX-Pc-Irm" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="qdv-Rb-XSX"/>
                             <constraint firstItem="ZY9-JT-EVD" firstAttribute="leading" secondItem="Xqv-jQ-hMW" secondAttribute="leading" type="default" id="uyQ-q0-39D"/>
+                            <constraint firstItem="WV4-QO-Ll4" firstAttribute="top" secondItem="ZY9-JT-EVD" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="wRH-Wc-BfY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Günün Yemeği" id="JkB-iw-7ty"/>
                     <connections>
+                        <outlet property="date" destination="ReX-Pc-Irm" id="s11-gN-Iif"/>
                         <outlet property="gununYemegi" destination="ZY9-JT-EVD" id="pgu-uH-8hj"/>
+                        <outlet property="kalori" destination="WV4-QO-Ll4" id="za2-Rr-K4t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mD5-J0-146" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -195,7 +221,9 @@
         <class className="_PPSGununYemegiViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/_PPSGununYemegiViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="date" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="gununYemegi" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="kalori" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="_PPSViewController" superclassName="UIViewController">

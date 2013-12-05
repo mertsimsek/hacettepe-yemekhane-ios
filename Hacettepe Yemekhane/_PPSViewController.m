@@ -14,10 +14,13 @@
 
 @implementation _PPSViewController
 
+@synthesize infoButton;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.infoButton.target = self;
+    self.infoButton.action = @selector(theAction);
     
 }
 
@@ -25,6 +28,15 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)theAction {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Hacettepe Yemekhane"
+                                                    message:@"Kullanmakta olduğunuz Hacettepe Yemekhane uygulaması Brain Is Free ekibi tarafından, gönüllü olarak geliştirilmiştir. Soru ve önerileriniz için finelycodesblog@gmail.com adresine mail atabilirsiniz"
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
 }
 
 @end

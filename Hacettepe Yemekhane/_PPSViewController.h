@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface _PPSViewController : UIViewController
+@interface _PPSViewController : UIViewController {
+    IBOutlet UIBarButtonItem *infoButton;
+}
+
+@property (nonatomic, retain) UIBarButtonItem *infoButton;
+
+-(IBAction)theAction;
 
 @end

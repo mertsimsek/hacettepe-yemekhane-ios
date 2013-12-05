@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6203759184FE67900F725F2 /* 4PPSAylikListeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6203758184FE67900F725F2 /* 4PPSAylikListeViewController.m */; };
+		A620375E184FFB0D00F725F2 /* Info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A620375C184FFB0D00F725F2 /* Info@2x.png */; };
+		A6203761184FFB4300F725F2 /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = A6203760184FFB4300F725F2 /* Info.png */; };
 		A66F3B9618415BDA00092A0F /* _PPSGununYemegiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A66F3B9518415BDA00092A0F /* _PPSGununYemegiViewController.m */; };
 		A6E0C72C18356A45007C1818 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E0C72B18356A45007C1818 /* UIKit.framework */; };
 		A6E0C72E18356A45007C1818 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E0C72D18356A45007C1818 /* Foundation.framework */; };
@@ -32,6 +35,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A6203757184FE67900F725F2 /* 4PPSAylikListeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 4PPSAylikListeViewController.h; sourceTree = "<group>"; };
+		A6203758184FE67900F725F2 /* 4PPSAylikListeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 4PPSAylikListeViewController.m; sourceTree = "<group>"; };
+		A620375C184FFB0D00F725F2 /* Info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Info@2x.png"; path = "../../../../Downloads/Info@2x.png"; sourceTree = "<group>"; };
+		A6203760184FFB4300F725F2 /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Info.png; path = ../../../../Downloads/Info.png; sourceTree = "<group>"; };
 		A66F3B9418415BDA00092A0F /* _PPSGununYemegiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _PPSGununYemegiViewController.h; sourceTree = "<group>"; };
 		A66F3B9518415BDA00092A0F /* _PPSGununYemegiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _PPSGununYemegiViewController.m; sourceTree = "<group>"; };
 		A6E0C72818356A45007C1818 /* Hacettepe Yemekhane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hacettepe Yemekhane.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +141,8 @@
 				A6E0C73218356A45007C1818 /* Supporting Files */,
 				A66F3B9418415BDA00092A0F /* _PPSGununYemegiViewController.h */,
 				A66F3B9518415BDA00092A0F /* _PPSGununYemegiViewController.m */,
+				A6203757184FE67900F725F2 /* 4PPSAylikListeViewController.h */,
+				A6203758184FE67900F725F2 /* 4PPSAylikListeViewController.m */,
 			);
 			path = "Hacettepe Yemekhane";
 			sourceTree = "<group>";
@@ -141,6 +150,8 @@
 		A6E0C73218356A45007C1818 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A6203760184FFB4300F725F2 /* Info.png */,
+				A620375C184FFB0D00F725F2 /* Info@2x.png */,
 				A6E0C73318356A45007C1818 /* Hacettepe Yemekhane-Info.plist */,
 				A6E0C73418356A45007C1818 /* InfoPlist.strings */,
 				A6E0C73718356A45007C1818 /* main.m */,
@@ -206,8 +217,10 @@
 			files = (
 				A6E0C73618356A45007C1818 /* InfoPlist.strings in Resources */,
 				A6E0C73E18356A45007C1818 /* Default.png in Resources */,
+				A620375E184FFB0D00F725F2 /* Info@2x.png in Resources */,
 				A6E0C74018356A45007C1818 /* Default@2x.png in Resources */,
 				A6E0C74218356A45007C1818 /* Default-568h@2x.png in Resources */,
+				A6203761184FFB4300F725F2 /* Info.png in Resources */,
 				A6E0C74518356A45007C1818 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,6 +236,7 @@
 				A6E0C73C18356A45007C1818 /* _PPSAppDelegate.m in Sources */,
 				A6E0C74818356A46007C1818 /* _PPSViewController.m in Sources */,
 				A66F3B9618415BDA00092A0F /* _PPSGununYemegiViewController.m in Sources */,
+				A6203759184FE67900F725F2 /* 4PPSAylikListeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

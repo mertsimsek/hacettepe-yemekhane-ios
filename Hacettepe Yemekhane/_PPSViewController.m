@@ -31,6 +31,7 @@
 }
 
 - (IBAction)theAction {
+    
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Hacettepe Yemekhane"
                                                     message:@"Kullanmakta olduğunuz Hacettepe Yemekhane uygulaması Brain Is Free ekibi tarafından, gönüllü olarak geliştirilmiştir. Soru ve önerileriniz için finelycodesblog@gmail.com adresine mail atabilirsiniz"
                                                    delegate:nil
